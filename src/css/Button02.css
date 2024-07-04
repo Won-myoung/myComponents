@@ -1,0 +1,27 @@
+.Button02 {
+  margin: 20px 0 0 20px;
+}
+.Button02 .buttons {
+  display: flex;
+  gap: 10px;
+}
+.Button02 .buttons button {
+  border: 2px solid gray;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.Button02 .buttons button.active {
+  color: white;
+  background-color: #333;
+  border: none;
+}
+
+.Button02 .contents .guideCardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 10px; */
+  img {
+    width: 100px;
+  }
+}

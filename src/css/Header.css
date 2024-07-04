@@ -1,0 +1,22 @@
+.Header ul li a {
+  display: block;
+  padding: 15px 10px;
+  background-color: #bbb;
+  color: white;
+  font-weight: bold;
+}
+.Header Ul Li a:not(:last-child) {
+  margin-bottom: 4px;
+}
+.Header ul li a.active {
+  color: grey;
+}
+
+.Header ul li a:hover {
+  color: white;
+  background-color: gray;
+}
+
+.Header {
+  padding: 30px 20px;
+}
