@@ -15,6 +15,11 @@ export default function Header() {
             Button02
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/DropMenu" className={({ isActive }) => (isActive ? "active" : "")}>
+            DropMenu
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

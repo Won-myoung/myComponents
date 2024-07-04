@@ -1,0 +1,68 @@
+a {
+  display: block;
+}
+.DropMenu {
+  display: flex;
+  flex-grow: 1;
+  max-width: 100%;
+  /* border: 2px solid red; */
+}
+.DropMenu > ul {
+  display: flex;
+  /* justify-content: space-between; */
+  /* gap: 20px; */
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+}
+.DropMenu > ul > li {
+  position: relative;
+  display: flex;
+  border: 2px solid red;
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.subMenu {
+  visibility: hidden;
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: 2px solid blue;
+  background-color: white;
+  z-index: 10;
+}
+
+.subMenu li a {
+  display: block;
+  padding: 15px 20px;
+  transition: all 0.3s;
+  /* margin-top: 10px; */
+}
+.subMenu li a:hover {
+  background-color: gray;
+  color: white;
+}
+.DropMenu > ul > li:hover .subMenu {
+  /* top: 100%; */
+  visibility: visible;
+  max-height: 300px;
+}
+
+/* .modalBtn {
+  display: block;
+}
+ */
+
+/* modal window */
