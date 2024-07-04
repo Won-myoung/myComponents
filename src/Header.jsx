@@ -6,7 +6,12 @@ export default function Header() {
     <div className="Header">
       <ul>
         <li>
-          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
+          <NavLink to="/Accordion" className={({ isActive }) => (isActive ? "active" : "")}>
+            Accordion
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Button01" className={({ isActive }) => (isActive ? "active" : "")}>
             Button01
           </NavLink>
         </li>
