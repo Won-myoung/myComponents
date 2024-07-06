@@ -1,0 +1,110 @@
+.section2 {
+  word-break: keep-all;
+}
+.section2 .section2Header {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  a {
+    display: block;
+    font-size: 18px;
+  }
+}
+
+.section2 .section2Header a::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(/public/payment/arrowSide.png) no-repeat center/cover;
+  transform: translateY(3px);
+  margin-left: 4px;
+}
+.section2 .section2Body {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  /* justify-content: center; */
+}
+.hiddenContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* max-width: 936px; */
+  /* justify-content: center; */
+}
+.section2 .section2Body li,
+.hidden-content li {
+  display: flex;
+  flex-direction: column;
+  padding: 41px 10px 18px;
+  width: 33.3%;
+  min-width: 180px;
+  & img {
+    width: 64px;
+  }
+  h4 {
+    font-size: 20px;
+    padding-top: 14px;
+  }
+  p {
+    font-size: 16px;
+    color: #7b7e86;
+    padding-top: 4px;
+    text-align: center;
+  }
+}
+.section2 .section2Body li a,
+.hiddenContent li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.section2 .section2Body li:last-child {
+  margin-bottom: 60px;
+}
+.showContentButton {
+  font-size: 20px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  color: #9b9fa8;
+  margin: 0 auto;
+  padding: 30px 0 60px;
+  & span {
+    color: #111;
+  }
+}
+.showContentButton::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  background: url(/public/payment/showmore.png) no-repeat center/cover;
+  margin-left: 4px;
+}
+.sectionBottomLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #ccc;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+.sectionBottomLink::before {
+  content: "";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url(/public/payment/ico_tip_banner_04_all_3.png) center/cover;
+  margin-right: 10px;
+}

@@ -1,0 +1,110 @@
+.mainSponsor {
+  padding: 48px 0;
+  background-color: #2589c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 160px;
+
+  .mainSponsorSelect {
+    display: flex;
+    max-width: 1120px;
+    margin: 0 20px;
+
+    .selectMoney {
+      display: flex;
+      padding-top: 14px;
+      flex-grow: 1;
+      > .selectBox {
+        /* padding-right: 24px; */
+        > select {
+          width: 160px;
+          height: 56px;
+          padding: 13px;
+          font-size: 16px;
+        }
+      }
+      .sponsorCenterbox {
+        padding: 0 60px 0 40px;
+      }
+      ul {
+        display: grid;
+        max-width: 825px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        /* gap: 10px; */
+        li {
+          display: flex;
+          flex-grow: 1;
+          height: 54px;
+          line-height: 54px;
+          border: 1px solid white;
+          align-items: center;
+          > button {
+            transition: all 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 0 auto;
+            background: none;
+            border: none;
+            width: 100%;
+            height: 100%;
+          }
+          > button.active {
+            background-color: white;
+            color: #2589c9;
+          }
+        }
+        li button:hover {
+          background-color: white;
+          color: #2589c9;
+        }
+        li input {
+          width: 100%;
+          height: 54px;
+        }
+        li:last-child input {
+          font-size: 16px;
+          font-weight: bold;
+          padding: 13px;
+        }
+        li:last-child input::placeholder {
+          color: #ccc;
+        }
+      }
+    }
+  }
+
+  .sponsorButton {
+    font-size: 20px;
+    min-width: 135px;
+    max-height: 135px;
+    aspect-ratio: 1/1;
+    line-height: 130px;
+    text-align: center;
+    background-color: rgb(255, 220, 14);
+    border-radius: 50%;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+  .sponsorButton:hover {
+    background-color: rgb(255, 194, 14);
+  }
+  .sponsorBodyText {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    > strong span {
+      color: rgb(255, 220, 14);
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  #button01 {
+    font-size: 16px;
+    color: red !important;
+  }
+}

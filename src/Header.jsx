@@ -6,7 +6,7 @@ export default function Header() {
     <div className="Header">
       <ul>
         <li>
-          <NavLink to="/Accordion" className={({ isActive }) => (isActive ? "active" : "")}>
+          <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
             Accordion
           </NavLink>
         </li>
@@ -23,6 +23,51 @@ export default function Header() {
         <li>
           <NavLink to="/DropMenu" className={({ isActive }) => (isActive ? "active" : "")}>
             DropMenu
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/DropMenuFull" className={({ isActive }) => (isActive ? "active" : "")}>
+            DropDownFull
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Modal" className={({ isActive }) => (isActive ? "active" : "")}>
+            Modal
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/OneClick" className={({ isActive }) => (isActive ? "active" : "")}>
+            OneClick
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/RandomInput" className={({ isActive }) => (isActive ? "active" : "")}>
+            RandomInput
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/ScrollWheel" className={({ isActive }) => (isActive ? "active" : "")}>
+            ScrollWheel
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/SideMenuBackUp" className={({ isActive }) => (isActive ? "active" : "")}>
+            SideMenuBackUp
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/SideMenuDown" className={({ isActive }) => (isActive ? "active" : "")}>
+            SideMenuDown
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/SlideShow" className={({ isActive }) => (isActive ? "active" : "")}>
+            SlideShow
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/SlideShow2" className={({ isActive }) => (isActive ? "active" : "")}>
+            SlideShow2
           </NavLink>
         </li>
       </ul>

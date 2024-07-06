@@ -1,0 +1,25 @@
+.routes {
+  border: 1px solid orange;
+  display: flex;
+  flex-grow: 1;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.accordion-header {
+  display: flex;
+  flex-grow: 1;
+  /* border: 2px solid blue; */
+}
+.accordion-header > button {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.accordion-header > button::after {
+  content: "";
+  display: flex;
+  margin-left: auto;
+}

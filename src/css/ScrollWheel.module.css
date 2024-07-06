@@ -1,0 +1,41 @@
+/* ScrollWheel.module.css */
+.scrollContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid red;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.section:nth-child(1) {
+  background-color: #ffadad;
+}
+
+.section:nth-child(2) {
+  background-color: #ffd6a5;
+}
+
+.section:nth-child(3) {
+  background-color: #fdffb6;
+}
+
+.section:nth-child(4) {
+  background-color: #caffbf;
+}
+
+.section:nth-child(5) {
+  background-color: #9bf6ff;
+}
+
+.current {
+  /* Add any specific styles for the current section if needed */
+}

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+/* body {
+  display: flex;
+  margin: 0;
+}
+ */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 1024px;
+}
+
+.article {
+  max-width: 1024px;
+  display: flex;
+}
+
+.title {
+  overflow: hidden;
+  margin: 0;
+}
+
+.headTitle {
+  margin-right: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.article.show .text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.letterLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.letterRight {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.article.show .letterLeft {
+  animation: revealLeft 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.article.show .letterRight {
+  animation: revealRight 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes revealLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes revealRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* components */
+
+.introWhatDifferent {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 120px 0 0;
+  display: flex;
+  flex-direction: column;
+  > h2 {
+    margin-bottom: 96px;
+  }
+}
+
+.introWhatDifferentBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #eee;
+  overflow: hidden;
+  > div {
+    background-color: #eee;
+    flex-grow: 1;
+    h3 {
+      color: #1cabe2;
+    }
+    strong {
+      color: #1cabe2;
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 32px;
+    }
+  }
+  > div:first-child {
+    width: 100%;
+    padding-left: 20px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.introWhatTextBox {
+  padding: 60px 20px 20px;
+}
+@media (max-width: 800px) {
+  .introWhatDifferentBox {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .letterDown {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .article.show .letterDown {
+    animation: revealDown 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  @keyframes revealDown {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
