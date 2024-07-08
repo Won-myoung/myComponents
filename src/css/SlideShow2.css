@@ -22,6 +22,7 @@ img {
   align-items: center;
   gap: 0;
   max-width: 1024px;
+  font-family: "Noto Sans KR";
 }
 
 .article {
@@ -80,7 +81,33 @@ img {
     transform: translateX(0);
   }
 }
+.article.hide .letterLeft {
+  animation: hideLeft 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.article.hide .letterRight {
+  animation: hideRight 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
 
+@keyframes hideLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+@keyframes hideRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
 /* components */
 
 .introWhatDifferent {
@@ -146,6 +173,21 @@ img {
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  /* hide 추가 */
+  .article.hide .letterDown {
+    animation: hideDown 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  @keyframes hideDown {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
     }
   }
 }

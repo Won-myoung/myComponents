@@ -21,6 +21,11 @@ export default function Header() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/CrossFade" className={({ isActive }) => (isActive ? "active" : "")}>
+            CrossFade
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/DropMenu" className={({ isActive }) => (isActive ? "active" : "")}>
             DropMenu
           </NavLink>
@@ -33,6 +38,11 @@ export default function Header() {
         <li>
           <NavLink to="/Modal" className={({ isActive }) => (isActive ? "active" : "")}>
             Modal
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/MovingText" className={({ isActive }) => (isActive ? "active" : "")}>
+            MovingText
           </NavLink>
         </li>
         <li>
@@ -68,6 +78,26 @@ export default function Header() {
         <li>
           <NavLink to="/SlideShow2" className={({ isActive }) => (isActive ? "active" : "")}>
             SlideShow2
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Toggle" className={({ isActive }) => (isActive ? "active" : "")}>
+            Toggle
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Toggle1" className={({ isActive }) => (isActive ? "active" : "")}>
+            Toggle1
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/Toggle2" className={({ isActive }) => (isActive ? "active" : "")}>
+            Toggle2
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/TypoSizeAuto" className={({ isActive }) => (isActive ? "active" : "")}>
+            TypoSizeAuto
           </NavLink>
         </li>
       </ul>

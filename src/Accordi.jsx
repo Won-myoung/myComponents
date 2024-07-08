@@ -9,7 +9,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Main01</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>
@@ -31,7 +31,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="1">
         <Accordion.Header>Main02</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>
@@ -53,7 +53,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="2">
         <Accordion.Header>Main03</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>
@@ -75,7 +75,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="3">
         <Accordion.Header>Main04</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>
@@ -97,7 +97,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="4">
         <Accordion.Header>Main05</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>
@@ -119,7 +119,7 @@ export default function Accordi() {
       <Accordion.Item eventKey="5">
         <Accordion.Header>Main06</Accordion.Header>
         <Accordion.Body>
-          <ul>
+          <ul className="Accordi">
             <li>
               <Link to="#">서브메뉴01</Link>
             </li>

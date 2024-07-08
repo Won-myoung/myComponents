@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./css/DropMenu.module.css";
+import styles from "./css/DropMenu.module.css";
 
 export default function DropMenu() {
   /*   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -8,12 +8,12 @@ export default function DropMenu() {
   }; */
   return (
     <>
-      <div className="DropMenu">
+      <div className={styles.DropMenu}>
         <ul>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab01")} className={isMenuOpen === "menuTab01" ? "active" : ""} */>Main01</Link>
 
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>
@@ -30,7 +30,7 @@ export default function DropMenu() {
           </li>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab02")} className={isMenuOpen === "menuTab02" ? "active" : ""} */>Main02</Link>
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>
@@ -47,7 +47,7 @@ export default function DropMenu() {
           </li>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab03")} className={isMenuOpen === "menuTab03" ? "active" : ""} */> Main03</Link>
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>
@@ -64,7 +64,7 @@ export default function DropMenu() {
           </li>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab04")} className={isMenuOpen === "menuTab04" ? "active" : ""} */> Main04</Link>
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>
@@ -81,7 +81,7 @@ export default function DropMenu() {
           </li>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab05")} className={isMenuOpen === "menuTab05" ? "active" : ""} */> Main05</Link>
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>
@@ -98,7 +98,7 @@ export default function DropMenu() {
           </li>
           <li>
             <Link to="/" /* onClick={() => handleButtonClick("menuTab06")} className={isMenuOpen === "menuTab06" ? "active" : ""} */> Main06</Link>
-            <ul className="subMenu">
+            <ul className={styles.subMenu}>
               <li>
                 <Link to="#">submenu01</Link>
               </li>

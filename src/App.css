@@ -1,3 +1,15 @@
 .App {
   display: flex;
 }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  font-family: "Noto Sans KR";
+}
+
+@font-face {
+  font-family: "MontFont";
+  src: url("/fonts/Mont-HeavyDEMO.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

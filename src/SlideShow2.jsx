@@ -9,24 +9,19 @@ export default function Slideshow2() {
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("show");
+            entry.target.classList.remove("hide"); // 먼저 hide 클래스를 제거
+            entry.target.classList.add("show"); // 그 후 show 클래스를 추가
           } else {
-            entry.target.classList.remove("show");
+            entry.target.classList.remove("show"); // 먼저 show 클래스를 제거
+            entry.target.classList.add("hide"); // 그 후 hide 클래스를 추가
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 } /*   0.2% 요소가 노출되었을 시 등장 */
     );
 
     articles.forEach((article) => {
       articleObserver.observe(article);
-    });
-
-    const delays = document.querySelectorAll(".delay");
-
-    delays.forEach((delay) => {
-      const delayTime = delay.getAttribute("data-delay");
-      delay.style.animationDelay = `${delayTime}s`;
     });
 
     // 컴포넌트 언마운트 시 옵저버 해제
@@ -62,7 +57,6 @@ export default function Slideshow2() {
     // 폰트 크기를 반환합니다.
     return `${fontSize}px`;
   };
-  // 폰트크기 width에 맞게 변환 min28/max48
   const calculateFontSize4024 = () => {
     const minFontSize = 24; // 최소 폰트 크기
     const maxFontSize = 40; // 최대 폰트 크기
@@ -73,7 +67,6 @@ export default function Slideshow2() {
     // 폰트 크기를 반환합니다.
     return `${fontSize}px`;
   };
-  // 폰트크기 width에 맞게 변환 min28/max48
   const calculateFontSize3220 = () => {
     const minFontSize = 20; // 최소 폰트 크기
     const maxFontSize = 32; // 최대 폰트 크기

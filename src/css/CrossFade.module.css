@@ -1,0 +1,21 @@
+.bodyWrap {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.dBlock {
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+  justify-content: center;
+  height: 100vh;
+  /* border: 2px solid red; */
+}
+
+.bodyText h3,
+.bodyText p {
+  display: inline-block;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}

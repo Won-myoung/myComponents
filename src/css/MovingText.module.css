@@ -1,0 +1,68 @@
+.flowContainer {
+  font-family: "MontFont";
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.flowText {
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  background-color: #e70017;
+  padding: 20px 0;
+  width: 100%;
+  letter-spacing: 10px;
+}
+.flowText02 {
+  background-color: rgb(0, 94, 255);
+}
+.flowText03 {
+  background: none;
+}
+.flowText:hover {
+  color: #000;
+}
+.flowText:hover .flowWrap {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.flowWrap {
+  animation: textLoop 7s linear infinite; /* Timer */
+}
+.flowWrap02 {
+  animation: textLoop 5s linear infinite; /* Timer */
+  padding-right: 1.4881vw;
+}
+.flowWrap04 {
+  animation: textLoop 20s linear infinite; /* Timer */
+  padding-right: 1.4881vw;
+}
+.flowWrap03 {
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 1px #e70017;
+  font-weight: bold;
+  text-align: center;
+}
+.flowWrap04 {
+  font-size: 160px;
+  color: #e70017;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes textLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
