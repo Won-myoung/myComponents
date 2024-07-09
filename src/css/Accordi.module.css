@@ -24,7 +24,7 @@
 } */
 .accordion-button/* ::after */ {
   content: "";
-  color: orange;
+  color: purple;
   font-weight: bold;
 }
 .collapsed {

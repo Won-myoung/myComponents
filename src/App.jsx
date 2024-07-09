@@ -16,6 +16,7 @@ import SideMenuBackUp from "./SideMenuBackUp";
 import SideMenuDown from "./SideMenuDown";
 import SlideShow from "./SlideShow";
 import SlideShow2 from "./SlideShow2";
+import Tabs from "./Tabs";
 import Toggle from "./Toggle";
 import Toggle1 from "./Toggle1";
 import Toggle2 from "./Toggle2";
@@ -43,6 +44,7 @@ function App() {
             <Route path="/SideMenuDown" element={<SideMenuDown />} />
             <Route path="/SlideShow" element={<SlideShow />} />
             <Route path="/SlideShow2" element={<SlideShow2 />} />
+            <Route path="/Tabs" element={<Tabs />} />
             <Route path="/Toggle" element={<Toggle />} />
             <Route path="/Toggle1" element={<Toggle1 />} />
             <Route path="/Toggle2" element={<Toggle2 />} />

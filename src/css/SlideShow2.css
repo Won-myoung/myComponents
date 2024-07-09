@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,11 +10,6 @@ img {
   display: block;
 }
 
-/* body {
-  display: flex;
-  margin: 0;
-}
- */
 .container {
   display: flex;
   flex-direction: column;
@@ -108,7 +103,6 @@ img {
     transform: translateX(100%);
   }
 }
-/* components */
 
 .introWhatDifferent {
   max-width: 1024px;
@@ -176,7 +170,6 @@ img {
     }
   }
 
-  /* hide 추가 */
   .article.hide .letterDown {
     animation: hideDown 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
   }
@@ -191,3 +184,4 @@ img {
     }
   }
 }
+ */
